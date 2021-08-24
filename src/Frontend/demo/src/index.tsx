@@ -6,12 +6,13 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import 'primeflex/primeflex.css';
 import './index.css';
+import NavigationBar from "./Containers/Layouts/Navigation/NavigationBar";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
       <React.Fragment>
-          <h1>App Page</h1>
+          <NavigationBar></NavigationBar>
       </React.Fragment>
   </React.StrictMode>,
   document.getElementById('root')
