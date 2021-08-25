@@ -6,13 +6,18 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import 'primeflex/primeflex.css';
 import './index.css';
-
+import { MoralisProvider } from "react-moralis";
+import RootRouter from "./Routers/RootRouter";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
       <React.Fragment>
-          
+
+         <MoralisProvider appId="JnpM12PLc1eS0qM6e2VyJKY29CENZcIG86UAMYXY" serverUrl="https://udc0hnq89hoq.usemoralis.com:2053/server">
+            <RootRouter></RootRouter>
+          </MoralisProvider>
+           
       </React.Fragment>
   </React.StrictMode>,
   document.getElementById('root')
